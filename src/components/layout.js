@@ -4,7 +4,7 @@ import Navigation from './navigation';
 export default class Layout extends Component {
     render(){
         return (
-            <div className='lyaout'>
+            <div className='layout'>
                 <Navigation />
                 { this.props.children }
             </div>

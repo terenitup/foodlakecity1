@@ -57,7 +57,7 @@ export default class Contact extends Component {
     console.log("render");
 
     return (
-      <div>
+      <div className='contact layout__content-inset'>
         <h1>CONTACT</h1>
 
         <input type="text" onKeyUp={e => this.handleKeyUp(e)} />

@@ -1,0 +1,20 @@
+.home {
+    display: grid;
+    // grid-template-columns: [s bg-s] 1fr [bg-e e];
+    // grid-template-rows: [bg-s] 200px [link-s] 200px [link-e] 1fr [bg-e];
+
+    justify-items: center;
+    align-items: center;
+
+    & > * {
+        grid-column: s/e;
+    }
+
+    img {
+        // grid-row: bg-s/bg-e;
+        grid-column: bg-s/bg-e;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+}
