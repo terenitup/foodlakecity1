@@ -7,6 +7,7 @@ export default class Instagram extends Component {
     return (
         <div className='instagram layout__content-inset'>
             INSTAGRAM
+
         </div>
     );
   }

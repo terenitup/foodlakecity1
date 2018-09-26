@@ -9,7 +9,7 @@ export default class Navigation extends Component {
       <div className='navigation'>
         <Link to='/'>home</Link>
         <Link to='/blog'>blog</Link>
-        <Link to='/instagram'>instagram</Link>
+        <a href='https://www.instagram.com/foodlakecity/' target='_blank'>instagram</a>
         <Link to='/contact'>contact</Link>
       </div>
     );
