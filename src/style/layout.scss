@@ -3,13 +3,12 @@
     height: 100vh;
 
     display: grid;
-    grid-template-rows: [home-s nav-s] 150px [nav-e content-s] 1fr [content-e home-e];
-    grid-template-columns: [content-s nav-s] 50px [content-inset-s] 1fr [content-inset-e] 50px [nav-e content-e];
+    grid-template-rows: [home-s nav-s] 200px [nav-e content-s] 1fr [content-e home-e];
+    grid-template-columns: [content-s nav-s] 100px [content-inset-s] 1fr [content-inset-e] 100px [nav-e content-e];
 
     .navigation {
         grid-row: nav-s/nav-e;
-        grid-column: nav-s/nav-e;
-        z-index: 10;
+        grid-column: content-inset-s/content-inset-e;
     }
 
     &__under-header {

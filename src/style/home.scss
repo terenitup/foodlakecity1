@@ -9,12 +9,27 @@
     // & > * {
     //     grid-column: s/e;
     // }
-    
-    &__image {
+
+    figure {
         width: 100%;
-        height: auto;
-        opacity: 0.65;
+        overflow: hidden;
+        margin: 0;
     }
+    
+    figure img {
+        display: block;
+        width: 100%;
+        margin: -30% 0 0 0;
+
+    }
+
+    // &__image {
+    //     width: 100%;
+    //     height: auto;
+    //     opacity: 0.65;
+    //     // position: absolute;
+    //     clip: rect(100px, 0px, 0px, 0px);
+    // }
     
     &__title {
         display: grid;

@@ -1,4 +1,9 @@
 .navigation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 450px 1fr 1fr 1fr 1fr;
+    z-index: 10;
+    
     font-size: 24px;
     // background-color: rgba(255, 255, 255, 0.322);
     // background: linear-gradient(rgba(255, 255, 255, 0.589),rgba(255, 255, 255, 0));
@@ -11,19 +16,58 @@
 
         &:hover {
             transform: scale(1.05);
-            font-size: 70px;
+            font-size: 50px;
         }
     }
     
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: 1fr;
-
     align-items: center;
-    justify-items: center;
+    justify-items: start;
 
     & > * {
         grid-row: 1/-1;
     }
 
+    &__subtitle {
+        grid-row: 1/2;
+        font-family: 'Fugaz One', cursive;
+        margin-left: 20px;
+        margin-bottom: -50px;
+    }
+    
+    &__foodlakecity {
+        grid-row: 2/3;
+        grid-column: 1/2;
+
+        p {
+            font-family: 'Fugaz One', cursive;
+            font-size: 2em;
+            margin-left: 20px;
+        }
+    
+    }
+
+    @mixin navigationLinks {
+        grid-row: 2/3;
+        justify-self: center;
+    }
+
+    &__home {
+        grid-column: 2/3;
+        @include navigationLinks();
+    }
+
+    &__blog {
+        grid-column: 3/4;
+        @include navigationLinks();
+    }
+
+    &__instagram {
+        grid-column: 4/5;
+        @include navigationLinks();
+    }
+
+    &__contact {
+        grid-column: 5/6;
+        @include navigationLinks();
+    }
 }
